@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { lightTheme, darkTheme } from "../../UI/Theme";
-import type { Theme } from "../../UI/Theme";
+import { lightTheme, darkTheme } from "../../UI/styled/Theme";
+import type { Theme } from "../../UI/styled/Theme";
 
 export enum ThemeType {
   light = "LIGHT_THEME",

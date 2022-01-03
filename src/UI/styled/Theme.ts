@@ -1,6 +1,6 @@
 import baseStyled, { ThemedStyledInterface } from "styled-components";
 
-import { Color, colors } from "../constants/colors";
+import { Color, colors } from "../../constants/colors";
 
 const { DARK_MAIN, LIGHT_MAIN, DARK_CONTRAST, LIGHT_CONTRAST, BLACK, WHITE } =
   colors;

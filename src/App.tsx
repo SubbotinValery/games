@@ -2,8 +2,8 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 
 import { useAppSelector } from "./hooks/redux";
-import { GlobalStyles } from "./UI/GlobalStyles";
-import Dashboard from "./Dashboard";
+import { GlobalStyles } from "./UI/styled/GlobalStyles";
+import Dashboard from "./components/Dashboard";
 
 export const App = () => {
   const { theme } = useAppSelector((state) => state.themeReducer);
