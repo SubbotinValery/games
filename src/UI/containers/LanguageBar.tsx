@@ -5,12 +5,13 @@ import { availableLanguages } from "../../i18n";
 import { LanguageBtn } from "../styled/LanguageBtn";
 
 export const LanguageBar = () => {
-  const { i18n } = useTranslation("Header");
+  const { i18n } = useTranslation();
 
   return (
     <div>
       {availableLanguages.map((lang) => (
         <LanguageBtn
+          key={lang}
           disabled={lang === i18n.language}
           active={lang === i18n.language}
           onClick={() => i18n.changeLanguage(lang)}

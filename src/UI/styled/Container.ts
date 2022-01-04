@@ -1,5 +1,6 @@
 import { styled } from "./Theme";
 
 export const Container = styled.div`
-  padding: 0 1.5rem;
+  max-width: 160rem;
+  margin: 0 auto;
 `;

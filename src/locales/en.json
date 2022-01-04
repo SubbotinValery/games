@@ -1,8 +1,5 @@
 {
-  "Main": {
-    "learnReact": "HELLO MAIN"
-  },
-  "Header": {
-    "learnReact": "HELLO HEADER"
+  "Dashboard": {
+    "GamesBlock-title": "Games"
   }
 }

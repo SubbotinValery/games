@@ -20,8 +20,7 @@ export const LanguageBtn = styled.button<{ active: Boolean }>`
   }
   & span {
     position: relative;
-    color: ${(props) =>
-      props.active ? props.theme.contrast : colors.DISABLED};
+    color: ${(props) => (props.active ? props.theme.text : colors.DISABLED)};
     text-transform: uppercase;
     font-size: 1.5rem;
     transition: ${transition};
@@ -38,7 +37,7 @@ export const LanguageBtn = styled.button<{ active: Boolean }>`
     transition: ${transition};
   }
   &:hover span {
-    color: ${(props) => props.theme.contrast};
+    color: ${(props) => !props.active && props.theme.text};
   }
   &:hover span::after {
     width: ${(props) => !props.active && "100%"};

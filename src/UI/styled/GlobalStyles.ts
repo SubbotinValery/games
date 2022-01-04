@@ -17,15 +17,35 @@ export const GlobalStyles = createGlobalStyle<{ theme: Theme }>`
         padding: 0;
         outline:0;
         box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
     }
     #root{
         margin:0 auto;
     }
 
     body{
+        padding: 0 1.5rem;
+        font-family: 'Poppins', sans-serif;
         transition: ${transition};
         background-color: ${(props) => props.theme.main};
         color: ${(props) => props.theme.text}
+    }
+
+    h1{
+        font-size: 3.2rem;
+    }
+    h2{
+        font-size: 2.4rem;
+    }
+    h3{
+        font-size: 1.9rem;
+    }
+    h4{
+        font-size: 1.6rem;
+    }
+    h5{
+        font-size: 1.3.4rem;
+    }
+    h6{
+        font-size: 1.1rem;
     }
  `;
