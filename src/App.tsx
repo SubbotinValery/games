@@ -3,7 +3,9 @@ import { ThemeProvider } from "styled-components";
 
 import { useAppSelector } from "./hooks/redux";
 import { GlobalStyles } from "./UI/styled/GlobalStyles";
-import Dashboard from "./components/Dashboard";
+import { Header } from "./UI/containers/Header";
+import { Container } from "./UI/styled/Container";
+import { Router } from "./components/Router";
 
 export const App = () => {
   const { theme } = useAppSelector((state) => state.themeReducer);
@@ -11,7 +13,10 @@ export const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Dashboard />
+      <Header />
+      <Container>
+        <Router />
+      </Container>
     </ThemeProvider>
   );
 };

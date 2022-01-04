@@ -1,16 +1,11 @@
 import React from "react";
-import { Container } from "../UI/styled/Container";
-import { Header } from "../UI/containers/Header";
-import { GamesBlock } from "./Games";
-const Dashboard = () => {
+
+import { GamesBlock } from "../UI/containers/GamesBlock";
+
+export const Dashboard = () => {
   return (
     <>
-      <Header />
-      <Container>
-        <GamesBlock />
-      </Container>
+      <GamesBlock />
     </>
   );
 };
-
-export default Dashboard;

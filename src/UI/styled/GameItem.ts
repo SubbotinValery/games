@@ -3,9 +3,10 @@ import { transition } from "../../constants/styleVariables";
 
 export const GameItem = styled.div`
   position: relative;
+  color: ${(props) => props.theme.text};
+  background-color: ${(props) => props.theme.main_lighten};
   padding: 2rem;
   transition: ${transition};
-  background-color: ${(props) => props.theme.main_lighten};
   &:hover {
     box-shadow: 0 0 1rem 0 ${(props) => props.theme.main_darken};
   }

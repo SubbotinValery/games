@@ -24,8 +24,10 @@ export const GamesContainer = styled.div`
   & > div {
     display: inline-flex;
     flex-wrap: wrap;
-    & > div {
+    & > * {
+      text-decoration: none;
       margin: 0.5rem;
+      font-size: 2.5rem;
     }
   }
 `;
